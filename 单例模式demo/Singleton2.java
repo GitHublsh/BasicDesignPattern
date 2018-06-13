@@ -1,0 +1,31 @@
+package singleton;
+
+/**
+ * Created by liushihan on 2018/6/13.
+ */
+//饿汉式
+public class Singleton2 {
+    private static final Singleton2 INSTANCE = new Singleton2();
+
+    private Singleton2() {
+    }
+
+    public static Singleton2 getInstance() {
+        return INSTANCE;
+    }
+}
+
+/*
+//饿汉式
+public class Singleton2 {
+    private static class SingletonHolder {
+        private static final Singleton2 INSTANCE = new Singleton2();
+    }
+
+    private Singleton2() {
+    }
+
+    public static final Singleton2 getInstance() {
+        return SingletonHolder.INSTANCE;
+    }
+}*/
