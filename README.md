@@ -6,4 +6,4 @@ Basic Design Pattern
 
 2.单例模式
 
-3.观察者模式（ing）
+3.抽象工厂模式
